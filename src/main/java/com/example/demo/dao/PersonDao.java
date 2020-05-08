@@ -14,7 +14,11 @@ public interface PersonDao {
         return insertPerson(id, person);
     }
 
+    Person getPersonById(UUID id);
+
     List<Person> getPersons();
 
     int updatePerson(Person person);
+
+    int deletePersonById(UUID id);
 }
